@@ -16,6 +16,7 @@ function QRCodeGenerator() {
         <input 
         type="text"
         value={input}
+        placeholder="Enter encrypting text"
         onChange={(e) => setInput(e.target.value)}
         />
         <button disabled={input === "" ? true : false} onClick={handleGenerator}>Generate QR Code</button>
